@@ -5,11 +5,12 @@
 #output {'m':1, 'a':2, 'c':1, ...}
 
 text = "machinelearning"
-print(text)
+# print(text)
 dic={}
 
-i=0
 for ch in text:
-    dic.append{ch:i}
-    i+=1
+  if ch in dic:
+    dic[ch]+=1
+  else:
+    dic[ch]=1
 print(dic)
