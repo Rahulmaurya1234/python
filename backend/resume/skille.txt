@@ -1,0 +1,27 @@
+python
+c
+c++
+java
+javascript  
+html
+css
+sql
+react
+node.js
+git
+docker
+aws
+linux
+bash
+restful api
+graphql
+typescript
+npm
+webpack
+jest
+mocha
+selenium        
+firebase
+mongodb
+postgresql
+mysql
