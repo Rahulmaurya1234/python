@@ -1,0 +1,119 @@
+Dynamic data structure” ka matlab kya?
+
+👉 Dynamic ka matlab:
+
+Size runtime pe change ho sakta hai
+
+Pehle se fixed size nahi hota
+
+🔹 Python me array kaun sa hota hai?
+
+Python me jo hum use karte hain:
+
+arr = [1, 2, 3]
+
+
+Ye list hai
+👉 Python list = dynamic array
+
+🔹 Dynamic array ka matlab (real sense)
+Aap ye kar sakte ho:
+arr = []
+arr.append(10)
+arr.append(20)
+arr.append(30)
+
+
+✔ Size automatically badh gaya
+✔ Aapne size define nahi kiya
+
+🔹 C / C++ se comparison (important)
+C/C++ array
+int arr[5];
+
+
+Size fixed = 5
+
+6th element ❌ not allowed
+
+Python list
+arr = []
+for i in range(1000):
+    arr.append(i)
+
+
+Size grow hota rahega
+
+No error
+
+👉 Isliye Python list dynamic array kehlati hai
+
+🔍 Internally Python list kaise kaam karti hai? (DEEP)
+
+👉 Python list internally:
+
+Continuous memory use karti hai
+
+Lekin extra space bhi rakhti hai
+
+Jab space full ho jata hai:
+
+Python naya bigger memory block leta hai
+
+Purane elements copy karta hai
+
+Old memory free karta hai
+
+Is process ko kehte hain:
+
+Resizing / Reallocation
+
+⚠️ Iska side-effect (DSA point)
+arr.append(x)
+
+
+Normally → O(1)
+
+Kabhi-kabhi → O(n) (jab resize hota hai)
+
+👉 Average time complexity = O(1)
+
+🔥 Interview-ready line
+
+Python lists are implemented as dynamic arrays, meaning their size can grow or shrink at runtime. Internally, Python allocates extra space to allow efficient appends, resizing only occasionally.
+
+🔹 Python me “real array” bhi hota hai?
+
+Yes 😮
+
+array module
+from array import array
+a = array('i', [1,2,3])
+
+
+Same type elements
+
+Less flexible
+
+Mostly NumPy arrays preferred
+
+🔹 Python list vs NumPy array (DSA + AIML)
+Feature	List	NumPy array
+Size	Dynamic	Fixed
+Types	Mixed	Same
+Speed	Slower	Faster
+AIML	❌	✅
+
+
+    l=0               r=n-1
+arr=[1,2,34,55,6,67,7,8,7]
+
+while(!arr[l]==arr[r-1])
+    if arr[l]<arr[r]
+    min=arr[l]
+    r--
+
+    if arr[l]>arr[r]
+    min=arr[r]
+    l++
+    

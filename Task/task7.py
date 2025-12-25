@@ -3,6 +3,7 @@
 # 👉 Function likho:
 
 # list input le
+#isinstance(value, datatype)
 
 # square of even numbers return kare
 def fun(l):

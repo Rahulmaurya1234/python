@@ -22,13 +22,15 @@ print("string:",str)
 print("totle characters:",len(str))
 
 #vowels count
-v=0
-c=0
-for ch in str:
-    if ch == "a" or ch == "e"  or ch == "o"  or ch == "u"  or ch == "i" :
-        v+=1
-    else:
-        c+=1
+v = 0
+c = 0
+for ch in str.lower():
+    if ch.isalpha():
+        if ch in "aeiou":
+            v += 1
+        else:
+            c += 1
+
 print("vowels:",v,"consonent",c)
 
 
